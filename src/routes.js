@@ -5,7 +5,7 @@ const routes = Router();
 
 
 routes.get('/', (req, res)=> {
-    res.send('Hello Fabrício');
+    res.send('run backend');
 });
 routes.get('/devs', DevController.index);
 routes.post('/dev', DevController.store);
