@@ -10,9 +10,7 @@ mongoose.connect(process.env.DATABASE, {
     useUnifiedTopology: true
 });
 
-app.use(cors({
-    'Access-Control-Allow-Origin': '*'
-}));
+app.use(cors());
 app.use(express.json());
 app.use(routes);
 
